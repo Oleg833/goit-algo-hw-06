@@ -2,9 +2,7 @@ import networkx as nx
 import matplotlib.pyplot as plt
 import heapq
 
-
 G = nx.DiGraph()
-
 
 edges = [("B 1", "B 2", {"weight": 5}), ("B 1", "B 3", {"weight": 3}),
          ("B 2", "B 3", {"weight": 2}), ("B 2", "B 4", {"weight": 7}),
@@ -27,7 +25,6 @@ def visualize_graph(graph, fixed_positions):
     labels = nx.get_edge_attributes(graph, 'weight')
     nx.draw_networkx_edge_labels(graph, fixed_positions, edge_labels=labels, font_color='red')
     plt.show()
-
 
 visualize_graph(G, fixed_positions)
 
