@@ -55,4 +55,3 @@ start_node = "B 1"
 
 for node, paths in list(dijkstra(G, start_node).items())[1:]:
     print(f"Найкоротший шлях з вершини {start_node} до вершини {node} = {paths}")
-
